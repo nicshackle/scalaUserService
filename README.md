@@ -1,4 +1,5 @@
 # Scala User Service
+![Build status](https://github.com/nicshackle/scalaUserService/actions/workflows/scala.yml/badge.svg)
 
 ## Running & Testing
 
