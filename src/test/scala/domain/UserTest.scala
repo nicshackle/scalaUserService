@@ -1,5 +1,6 @@
 package domain
 
+import org.joda.time.DateTime
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.must.Matchers.convertToAnyMustWrapper
 import org.scalatest.matchers.should.Matchers
@@ -20,7 +21,7 @@ class UserTest extends AnyFlatSpec with Matchers {
     user.username shouldEqual "test_username"
     user.email shouldEqual "test@test.com"
     user.passwordHash shouldEqual "test_hash"
-    user.created.isBeforeNow mustBe true
+    user.created mustBe a[DateTime]
     user.active shouldEqual true
   }
 
